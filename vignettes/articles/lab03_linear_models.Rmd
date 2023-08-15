@@ -19,7 +19,7 @@ library(dplyr)
 library(knitr)
 library(FANR6750)
 library(ggplot2)
-#source(here::here("R/zzz.R"))
+source(here::here("R/zzz.R"))
 ```
 
 ## Lab 2
