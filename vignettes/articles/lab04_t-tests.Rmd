@@ -19,7 +19,7 @@ library(dplyr)
 library(knitr)
 library(FANR6750)
 library(ggplot2)
-#source(here::here("R/zzz.R"))
+source(here::here("R/zzz.R"))
 ```
 
 ```{r, eval= F, include= F}
@@ -280,21 +280,21 @@ Notice the $=$ and $\ne$ in the hypotheses. $\mu_1$ may be being compared to a s
 In constrast, a **one tailed test** will have hypotheses like these below:
 
 $$
-H_0: \mu_1 < x
-$$
-
-$$
-H_A: \mu_1 \ge x
-$$
-
-Or the other way around:
-
-$$
 H_0: \mu_1 \le x
 $$
 
 $$
 H_A: \mu_1 > x
+$$
+
+Or the other way around:
+
+$$
+H_0: \mu_1 \ge x
+$$
+
+$$
+H_A: \mu_1 < x
 $$
 
 Notice that in a one tailed test, the alternative is only interested in one direction and the null includes everything else.
@@ -640,7 +640,7 @@ data("tunadata")
 
 3) Create a header called "Hypotheses" and under this header, in plain English indicate what the null and alternative hypotheses are for the t-test. Also use R Markdown's equation features to write these hypotheses using mathematical notation. In order to do this, you will need to consider what type of test would be appropriate for this data and how many tails the test will have.
 
-4) Create a header called "t-test by hand". Under this header, do a t-test on the tuna data without using the `t.test()` function. Use only the functions `mean`, `sd`, and possibly `length`. Be sure to **annotate your code** (either within the `R` chunk using `#` or as plain text within the R Markdown file) and **state the decision** (reject or fail to reject the null) based on your results. 
+4) Create a header called "t-test by hand". Under this header, do a t-test on the tuna data without using the `t.test()` function. Use only functions such as `mean`, `sd`, and possibly `length`. Be sure to **annotate your code** (either within the `R` chunk using `#` or as plain text within the R Markdown file) and **state the decision** (reject or fail to reject the null) based on your results. 
 
 5) Create a header called "t-test in R". Under this header, do the t-test again, but this time using the `t.test` function.
 
