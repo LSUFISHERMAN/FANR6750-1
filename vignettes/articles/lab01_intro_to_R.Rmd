@@ -302,7 +302,7 @@ z <- x/y
 z
 ```
 
-Notice how the way that `R` recycles a vector depends on which is longer.
+Notice the way that `R` recycles a vector depends on which is longer.
 
 ### Indexing vectors
 
@@ -385,7 +385,7 @@ var(ticks)
 
 ### Arguments
 
-Every function takes a different set of arguments and in many cases you will need to look up what those arguments are. The best way to get help for a specific function is to type a question mark followed by the function name, which will bring up a help page in the bottom right panel. For example, the `round` function rounds a number to a specified number of decimal places. This is a useful function when we don't want to print a really large number of digits:
+Every function takes a different set of arguments and in many cases you will need to look up what those arguments are. The best way to get help for a specific function is to type in the console a question mark followed by the function name, which will bring up a help page in the bottom right panel. For example, the `round` function rounds a number to a specified number of decimal places. This is a useful function when we don't want to print a really large number of digits:
 
 ```{r help, eval = FALSE, echo = TRUE}
 ?round
@@ -517,7 +517,7 @@ As you will see shortly, one of the most common tasks when working with data fra
 
 #### Selecting columns
 
-First, we may want to select a subset of all of the columns in a big data frame. Data frames are essentially tables, which means we can reference both rows and columns by their number: `data.frame[row#, column#]`. The row and column numbers have to put inside of square brackets following the name of the data frame object. The row number always comes first and the column number second. If you want to select all rows of a specific column, you just leave the `row#` blank. For example, if we wanted a vector containing the number of jays at each survey location:
+First, we may want to select a subset of all of the columns in a big data frame. Data frames are essentially tables, which means we can reference both rows and columns by their number: `data.frame[row#, column#]`. The row and column numbers have to be put inside of square brackets following the name of the data frame object. The row number always comes first and the column number second. If you want to select all rows of a specific column, you just leave the `row#` blank. For example, if we wanted a vector containing the number of jays at each survey location:
 
 ```{r}
 jaydata[,8]
@@ -530,7 +530,7 @@ We can also select columns using `data.frame$column` (where `data.frame` is the 
 jaydata$jays
 ```
 
-Notice that if you hit `tab` after you type the `$`, RStudio will bring up all of the columns and you can use the up or down buttons to find the one you want. 
+Notice that if you hit `tab` after you type the `$`, RStudio will bring up all of the columns in the dataframe and you can use the up or down buttons to find the one you want. 
 
 Sometimes you may want to select more than one column. One way to do that is by indexing using the column names^[You may begin to notice that as we stack functions inside of eachother, it becomes difficult to keep track of matching parentheses and brackets. Newer versions of `R` have resolved this problem using a handy tool. Click `Code` --> `Rainbow parentheses` to make color matched parentheses and brackets for easier code reading.]:
 
@@ -547,7 +547,7 @@ head(subset(jaydata, select= -c(seeds)))
 
 ***
 
-#### Filtering rows
+#### Selecting rows
 
 To select specific rows, we can use the `row#` method we learned above, this time leaving the columns blank:
 
