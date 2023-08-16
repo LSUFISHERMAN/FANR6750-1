@@ -1,10 +1,10 @@
 ---
-title: "Lab 6: Multiple Regression"
+title: "Lab 5: Multiple Regression"
 subtitle: "FANR 6750: Experimental Methods in Forestry and Natural Resources Research"
 author: "Fall 2023"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{lab06_multiple_regression}
+  %\VignetteIndexEntry{lab05_multiple_regression}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,10 +16,10 @@ knitr::opts_chunk$set(echo = TRUE,fig.retina = 2,
   collapse = TRUE,
   comment = "#>"
 )
-#source(here::here("R/zzz.R"))
+source(here::here("R/zzz.R"))
 ```
 
-## Lab 5
+## Lab 4
 
 1) ANOVA
 
@@ -459,7 +459,7 @@ summary(lm1)
 <br>
 
 
-# Assignment 
+# Assignment
 
 Some time ago, plantations of *Pinus caribaea* were established at four locations on Puerto Rico. As part of a study, four spacing intervals were used at each location to determine the effect of spacing on tree height. Twenty years after the plantations were established, measurements (height in ft) were made in the study plots. Additionally, soil chemistry was analyzed to determine average pH and nitrogen content (mg N/kg soil) for each tree. Note that although spacing interval is a number, it must be treated as a factor since these 4 spacing intervals (and only these 4) are of interest to the researcher.
 
