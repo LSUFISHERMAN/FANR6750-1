@@ -1,10 +1,10 @@
 ---
-title: "Lab 5: Completely randomized ANOVA"
+title: "Lab 4: Completely randomized ANOVA"
 subtitle: "FANR 6750: Experimental Methods in Forestry and Natural Resources Research"
 author: "Fall 2023"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{lab05_ANOVA}
+  %\VignetteIndexEntry{lab04_ANOVA}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -17,12 +17,12 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.retina 
 library(dplyr)
 library(knitr)
 library(FANR6750)
-#source(here::here("R/zzz.R"))
+source(here::here("R/zzz.R"))
 library(kableExtra)
 library(ggplot2)
 ```
 
-## Lab 4
+## Lab 3
 
 1) t-tests
 
@@ -375,7 +375,7 @@ plot(TukeyHSD(aov1))
 
 <br>
 
-# Assignment
+# Assignment (**For a grade**)
 
 A biologist wants to compare the growth of four different tree species she is considering for use in reforestation efforts. All 32 seedlings of the four species are planted at the same time in a large plot. Heights in meters are recorded after several years. 
 
